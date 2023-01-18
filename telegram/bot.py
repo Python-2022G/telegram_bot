@@ -54,7 +54,7 @@ class Bot:
         url = f'{self.base_url}getUpdates'
 
         response = requests.get(url)
-        return response.json()['result']
+        return response.json()['result'][-1]
 
     def sendPhoto(self,chat_id:int,photo:str):
         """
