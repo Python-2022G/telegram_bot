@@ -72,8 +72,6 @@ class Bot:
         }
         response = requests.get(url, json=payload)
         return response.status_code
-        
-
 
     def sendSticker(self,chat_id:int,sticker:str):
         """
