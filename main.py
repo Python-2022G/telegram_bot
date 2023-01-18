@@ -7,4 +7,7 @@ TOKEN = os.environ['TOKEN']
 bot = Bot(TOKEN)
 # Print the bot info
 
-print(bot.getUpdates())
+
+# AgACAgIAAxkBAAM7Y8ff0rHRcCSf2BBKaHnwsZt0Rt0AAovCMRtA6kFKibAqEiqrfHoBAAMCAANzAAMtBA
+print(bot.sendPhoto('1258594598',
+    'AgACAgIAAxkBAAM7Y8ff0rHRcCSf2BBKaHnwsZt0Rt0AAovCMRtA6kFKibAqEiqrfHoBAAMCAANzAAMtBA'))

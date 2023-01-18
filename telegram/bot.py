@@ -65,7 +65,14 @@ class Bot:
         returns:
             A message object
         """
-        pass
+        url = self.base_url + 'sendPhoto'
+        payload = {
+            'chat_id': chat_id,
+            'photo': photo
+        }
+        response = requests.get(url, json=payload)
+        return response.status_code
+        
 
 
     def sendSticker(self,chat_id:int,sticker:str):
